@@ -4,6 +4,7 @@ const dom = require('xmldom').DOMParser;
 const fs = require('fs');
 const app = express();
 const port = 3000;
+const test = 'Hello there'
 
 const xml = fs.readFileSync('/var/tmp/export.xml', 'utf8');
 const doc = new dom().parseFromString(xml);
